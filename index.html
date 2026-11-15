@@ -2,1199 +2,1186 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta property="og:title" content="Dikshit Weds Aditi | Wedding Invitation" />
-    <meta property="og:description"
-        content="We cordially invite you to celebrate our special day on 2nd December 2026." />
-    <!-- <meta property="og:image" content="https://netlify.app" /> -->
-    <meta content="https://netlify.app" />
-    <meta property="og:type" content="website" />
-    <title>Dikshit & Aditi | Wedding Invitation</title>
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-    <!-- Canvas Confetti for Celebration Blast -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <style>
-        :root {
-            --bg-warm-white: #FDF9F3;
-            --bg-cream: #F8EFE4;
-            --peach-pink: #E8998D;
-            --peach-soft: #F4C2B8;
-            --peach-deep: #C86D61;
-            --peach-dark: #9E4B41;
-            --gold-accent: #C59B48;
-            --gold-light: #E8CFA0;
-            --text-primary: #6E3B35;
-            --text-soft: #8F5A53;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta property="og:title" content="Dikshit Weds Aditi | Wedding Invitation" />
+  <meta property="og:description"
+    content="We cordially invite you to celebrate our special day on 2nd December 2026." />
+  <!-- <meta property="og:image" content="https://netlify.app" /> -->
+  <meta content="https://netlify.app" />
+  <meta property="og:type" content="website" />
+  <title>Dikshit & Aditi | Wedding Invitation</title>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Montserrat:wght@300;400;500;600&family=Noto+Serif+Devanagari:wght@500;600&family=Tangerine:wght@700&display=swap"
+    rel="stylesheet">
+  <!-- Canvas Confetti for Celebration Blast -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    :root {
+      --bg-warm-white: #FFF9FC;
+      --bg-cream: #F9EDF4;
+      --peach-pink: #DCA5C4;
+      --peach-soft: #F0CCE1;
+      --peach-deep: #78558A;
+      --peach-dark: #60416F;
+      --gold-accent: #C59B48;
+      --gold-light: #E8CFA0;
+      --text-primary: #574563;
+      --text-soft: #75617F;
+      --font-display: 'Tangerine', cursive;
+      --font-names: 'Tangerine', cursive;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: var(--bg-warm-white);
-            color: var(--text-primary);
-            overflow-x: hidden;
-            width: 100%;
-            min-height: 100vh;
-        }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--bg-warm-white);
+      color: var(--text-primary);
+      overflow-x: hidden;
+      width: 100%;
+      min-height: 100vh;
+    }
 
-        /* Mobile Portrait Wrapper */
-        .mobile-wrapper {
-            width: 100%;
-            max-width: 480px;
-            margin: 0 auto;
-            background-color: var(--bg-warm-white);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 0 40px rgba(158, 75, 65, 0.08);
-        }
+    /* Mobile Portrait Wrapper */
+    .mobile-wrapper {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto;
+      background-color: var(--bg-warm-white);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(96, 65, 111, 0.08);
+    }
 
-        /* =========================================
-           SLIDE 1: 4-FLAP PEACH & WARM WHITE ENVELOPE
+    /* =========================================
+           SLIDE 1: 4-FLAP BLUSH PINK ENVELOPE
            ========================================= */
-        #envelope-overlay {
-            position: fixed;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            max-width: 480px;
-            height: 100vh;
-            z-index: 9999;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: opacity 0.9s ease, visibility 0.9s ease;
-            overflow: hidden;
-            background: transparent;
-        }
+    #envelope-overlay {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 480px;
+      height: 100vh;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.9s ease, visibility 0.9s ease;
+      overflow: hidden;
+      background: transparent;
+    }
 
-        #envelope-overlay.hidden {
-            opacity: 0;
-            visibility: hidden;
-            pointer-events: none;
-        }
+    #envelope-overlay.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
 
-        .flap {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            transition: transform 1.4s cubic-bezier(0.77, 0, 0.175, 1);
-            z-index: 1;
-        }
+    .flap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: transform 1.4s cubic-bezier(0.77, 0, 0.175, 1);
+      z-index: 1;
+    }
 
-        .flap-top {
-            background: linear-gradient(180deg, #F6D8D0 0%, #EFC2B7 100%);
-            clip-path: polygon(0 0, 100% 0, 50% 53%);
-            filter: drop-shadow(0 4px 10px rgba(158, 75, 65, 0.15));
-            z-index: 4;
-        }
+    .flap-top {
+      background: linear-gradient(180deg, #F6DCEB 0%, #EDC4DC 100%);
+      clip-path: polygon(0 0, 100% 0, 50% 53%);
+      filter: drop-shadow(0 4px 10px rgba(96, 65, 111, 0.15));
+      z-index: 4;
+    }
 
-        .flap-bottom {
-            background: linear-gradient(0deg, #F6D8D0 0%, #EFC2B7 100%);
-            clip-path: polygon(0 100%, 100% 100%, 50% 47%);
-            filter: drop-shadow(0 -4px 10px rgba(158, 75, 65, 0.12));
-            z-index: 3;
-        }
+    .flap-bottom {
+      background: linear-gradient(0deg, #F6DCEB 0%, #EDC4DC 100%);
+      clip-path: polygon(0 100%, 100% 100%, 50% 47%);
+      filter: drop-shadow(0 -4px 10px rgba(96, 65, 111, 0.12));
+      z-index: 3;
+    }
 
-        .flap-left {
-            background: linear-gradient(90deg, #FDF9F3 0%, #F7E5DC 100%);
-            clip-path: polygon(0 0, 52% 50%, 0 100%);
-            z-index: 2;
-        }
+    .flap-left {
+      background: linear-gradient(90deg, var(--bg-warm-white) 0%, #F7E5EF 100%);
+      clip-path: polygon(0 0, 52% 50%, 0 100%);
+      z-index: 2;
+    }
 
-        .flap-right {
-            background: linear-gradient(270deg, #FDF9F3 0%, #F7E5DC 100%);
-            clip-path: polygon(100% 0, 48% 50%, 100% 100%);
-            z-index: 2;
-        }
+    .flap-right {
+      background: linear-gradient(270deg, var(--bg-warm-white) 0%, #F7E5EF 100%);
+      clip-path: polygon(100% 0, 48% 50%, 100% 100%);
+      z-index: 2;
+    }
 
-        #envelope-overlay.open .flap-top {
-            transform: translateY(-105%);
-        }
+    #envelope-overlay.open .flap-top {
+      transform: translateY(-105%);
+    }
 
-        #envelope-overlay.open .flap-bottom {
-            transform: translateY(105%);
-        }
+    #envelope-overlay.open .flap-bottom {
+      transform: translateY(105%);
+    }
 
-        #envelope-overlay.open .flap-left {
-            transform: translateX(-105%);
-        }
+    #envelope-overlay.open .flap-left {
+      transform: translateX(-105%);
+    }
 
-        #envelope-overlay.open .flap-right {
-            transform: translateX(105%);
-        }
+    #envelope-overlay.open .flap-right {
+      transform: translateX(105%);
+    }
 
-        .envelope-content {
-            position: relative;
-            z-index: 10;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transition: opacity 0.5s ease, transform 0.5s ease;
-            padding: 20px;
-        }
+    .envelope-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: opacity 0.5s ease, transform 0.5s ease;
+      padding: 20px;
+    }
 
-        #envelope-overlay.open .envelope-content {
-            opacity: 0;
-            transform: scale(0.9);
-        }
+    #envelope-overlay.open .envelope-content {
+      opacity: 0;
+      transform: scale(0.9);
+    }
 
-        .ganesh-top {
-            width: 68px;
-            height: 68px;
-            margin-bottom: 10px;
-            fill: var(--peach-dark);
-        }
+    .ganesh-top {
+      width: clamp(112px, 22vh, 152px);
+      height: auto;
+      flex-shrink: 0;
+      margin-bottom: 12px;
+      color: var(--peach-dark);
+      filter: drop-shadow(0 3px 8px rgba(96, 65, 111, 0.12));
+    }
 
-        .mantra-top {
-            font-size: 0.9rem;
-            color: var(--peach-dark);
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
+    .mantra-top {
+      font-family: 'Noto Serif Devanagari', serif;
+      font-size: clamp(0.8rem, 3.4vw, 0.95rem);
+      line-height: 1.9;
+      color: var(--peach-dark);
+      font-weight: 500;
+      margin-bottom: 12px;
+      animation: mantraFadeIn 1.6s ease-out both, mantraGlow 4s ease-in-out 1.6s infinite;
+    }
 
-        .await-text {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.5rem;
-            font-style: italic;
-            color: var(--peach-dark);
-            margin-bottom: 32px;
-            letter-spacing: 0.5px;
-        }
+    .mantra-invocation {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
 
-        /* Gold Wax Seal */
-        .wax-seal {
-            width: 106px;
-            height: 106px;
-            border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, #F7E1A8, #D1A54C 60%, #9E7727 100%);
-            box-shadow: 0 10px 25px rgba(158, 75, 65, 0.25), inset 0 2px 6px rgba(255, 255, 255, 0.75);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            position: relative;
-            animation: sealPulse 2.2s infinite ease-in-out;
-            border: 3px solid #E5C375;
-        }
+    @keyframes mantraFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-        .wax-seal::after {
-            content: "";
-            position: absolute;
-            width: 84px;
-            height: 84px;
-            border-radius: 50%;
-            border: 1.5px dashed rgba(110, 59, 53, 0.45);
-        }
+    @keyframes mantraGlow {
+      0%, 100% {
+        text-shadow: 0 0 0 transparent;
+      }
+      50% {
+        text-shadow: 0 0 12px rgba(255, 249, 252, 0.95), 0 0 22px rgba(197, 155, 72, 0.45);
+      }
+    }
 
-        .seal-initials {
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #6E3B35;
-            letter-spacing: 1px;
-        }
+    .await-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-style: italic;
+      color: var(--peach-dark);
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+    }
 
-        @keyframes sealPulse {
+    /* Gold Wax Seal */
+    .wax-seal {
+      width: 106px;
+      height: 106px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #F7E1A8, #D1A54C 60%, #9E7727 100%);
+      box-shadow: 0 10px 25px rgba(96, 65, 111, 0.25), inset 0 2px 6px rgba(255, 255, 255, 0.75);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      animation: sealPulse 2.2s infinite ease-in-out;
+      border: 3px solid #E5C375;
+    }
 
-            0%,
-            100% {
-                transform: scale(1);
-            }
+    .wax-seal::after {
+      content: "";
+      position: absolute;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      border: 1.5px dashed rgba(87, 69, 99, 0.45);
+    }
 
-            50% {
-                transform: scale(1.07);
-            }
-        }
+    .seal-initials {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: 1px;
+    }
 
-        .click-open-label {
-            margin-top: 24px;
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.25rem;
-            color: var(--peach-dark);
-            letter-spacing: 1px;
-            font-weight: 600;
-            cursor: pointer;
-        }
+    @keyframes sealPulse {
 
-        /* Floating Music Button */
-        #music-control {
-            position: fixed;
-            bottom: 22px;
-            left: 20px;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: var(--peach-deep);
-            color: var(--bg-warm-white);
-            border: 1.5px solid var(--gold-light);
-            display: none;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.1rem;
-            z-index: 900;
-            cursor: pointer;
-            box-shadow: 0 4px 14px rgba(158, 75, 65, 0.3);
-        }
+      0%,
+      100% {
+        transform: scale(1);
+      }
 
-        /* =========================================
+      50% {
+        transform: scale(1.07);
+      }
+    }
+
+    .click-open-label {
+      margin-top: 24px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      color: var(--peach-dark);
+      letter-spacing: 1px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Floating Music Button */
+    #music-control {
+      position: fixed;
+      bottom: 22px;
+      left: 20px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--peach-deep);
+      color: var(--bg-warm-white);
+      border: 1.5px solid var(--gold-light);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1rem;
+      z-index: 900;
+      cursor: pointer;
+      box-shadow: 0 4px 14px rgba(96, 65, 111, 0.3);
+    }
+
+    /* =========================================
            SLIDE 2: FULL-SCREEN HERO COUPLE PHOTO
            ========================================= */
-        .hero-section {
-            position: relative;
-            width: 100%;
-            height: 92vh;
-            min-height: 580px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
-            padding: 40px 20px 30px;
-        }
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 92vh;
+      min-height: 580px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px 30px;
+    }
 
-        .hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            /* Replace 'couple-hero.jpeg' with your cover photo */
-            background-image: url('couple-hero.jpeg'), url('https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=900&q=85');
-            background-size: cover;
-            background-position: center;
-            z-index: 1;
-            transform: scale(1.1);
-            transition: transform 6s ease-out;
-        }
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* Replace 'couple-hero.jpeg' with your cover photo */
+      background-image: url('couple-hero.jpeg'), url('https://images.unsplash.com/photo-1606800052052-a08af7148866?auto=format&fit=crop&w=900&q=85');
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      transform: scale(1.1);
+      transition: transform 6s ease-out;
+    }
 
-        .hero-section.active .hero-bg {
-            transform: scale(1);
-        }
+    .hero-section.active .hero-bg {
+      transform: scale(1);
+    }
 
-        .hero-gradient {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(180deg, rgba(158, 75, 65, 0.32) 0%, rgba(110, 59, 53, 0.12) 45%, rgba(110, 59, 53, 0.78) 100%);
-            z-index: 2;
-        }
+    .hero-gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(96, 65, 111, 0.32) 0%, rgba(87, 69, 99, 0.12) 45%, rgba(87, 69, 99, 0.78) 100%);
+      z-index: 2;
+    }
 
-        .hero-top-mantra {
-            position: relative;
-            z-index: 3;
-            color: var(--bg-warm-white);
-            font-size: 0.92rem;
-            letter-spacing: 0.5px;
-            text-shadow: 0 2px 8px rgba(110, 59, 53, 0.6);
-        }
+    .hero-bottom-content {
+      position: relative;
+      z-index: 3;
+      color: var(--bg-warm-white);
+      width: 100%;
+    }
 
-        .hero-bottom-content {
-            position: relative;
-            z-index: 3;
-            color: var(--bg-warm-white);
-            width: 100%;
-        }
+    .hero-names,
+    .solo-name,
+    .ampersand-divider {
+      font-family: var(--font-names);
+      font-weight: 700;
+    }
 
-        .hero-names {
-            font-family: 'Great Vibes', cursive;
-            font-size: 4.1rem;
-            line-height: 1.05;
-            color: var(--bg-warm-white);
-            text-shadow: 0 4px 16px rgba(110, 59, 53, 0.65);
-        }
+    .hero-names {
+      font-size: 3.7rem;
+      line-height: 1.15;
+      color: var(--bg-warm-white);
+      text-shadow: 0 4px 16px rgba(87, 69, 99, 0.65);
+    }
 
-        .hero-names span {
-            display: block;
-            font-size: 2.3rem;
-            color: var(--peach-soft);
-            margin: 2px 0;
-        }
+    .hero-names span {
+      display: block;
+      font-size: 2.3rem;
+      color: var(--peach-soft);
+      margin: 2px 0;
+    }
 
-        .scroll-cue {
-            margin-top: 22px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: var(--bg-warm-white);
-            font-size: 0.72rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            opacity: 0.92;
-            animation: bounceDown 2s infinite;
-        }
+    .scroll-cue {
+      margin-top: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: var(--bg-warm-white);
+      font-size: 0.72rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      opacity: 0.92;
+      animation: bounceDown 2s infinite;
+    }
 
-        @keyframes bounceDown {
+    @keyframes bounceDown {
 
-            0%,
-            100% {
-                transform: translateY(0);
-            }
+      0%,
+      100% {
+        transform: translateY(0);
+      }
 
-            50% {
-                transform: translateY(6px);
-            }
-        }
+      50% {
+        transform: translateY(6px);
+      }
+    }
 
-        /* =========================================
+    /* =========================================
            GENERAL SECTION & REVEAL ANIMATIONS
            ========================================= */
-        .section {
-            padding: 55px 24px;
-            text-align: center;
-            position: relative;
-        }
+    .section {
+      padding: 55px 24px;
+      text-align: center;
+      position: relative;
+    }
 
-        .bg-warm {
-            background-color: var(--bg-warm-white);
-        }
+    .bg-warm {
+      background-color: var(--bg-warm-white);
+    }
 
-        .bg-peach-tint {
-            background: linear-gradient(180deg, #FBF2EC 0%, #F6E5DD 100%);
-        }
+    .bg-peach-tint {
+      background: linear-gradient(180deg, #FCF2F8 0%, #F6E3EF 100%);
+    }
 
-        .reveal {
-            opacity: 0;
-            transform: translateY(28px);
-            transition: opacity 0.9s ease, transform 0.9s ease;
-        }
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.9s ease, transform 0.9s ease;
+    }
 
-        .reveal.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-        .script-heading {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.9rem;
-            color: var(--peach-dark);
-            margin-bottom: 6px;
-            line-height: 1.2;
-        }
+    .script-heading {
+      font-family: var(--font-display);
+      font-size: 2.3rem;
+      font-weight: 700;
+      color: var(--peach-dark);
+      -webkit-text-stroke: 0.5px currentColor;
+      margin-bottom: 6px;
+      line-height: 1.2;
+    }
 
-        .sub-caption {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.15rem;
-            color: var(--text-soft);
-            margin-bottom: 24px;
-        }
+    .sub-caption {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      color: var(--text-soft);
+      margin-bottom: 24px;
+    }
 
-        /* =========================================
+    /* =========================================
            SLIDE 3: TRADITIONAL HAWAN GRAPHIC + SCRATCH CARD
            ========================================= */
-        .hawan-graphic-box {
-            width: 155px;
-            height: 155px;
-            margin: 0 auto 14px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: radial-gradient(circle, #FFFDF9 0%, #F7E5DC 100%);
-            border-radius: 50%;
-            border: 1.5px solid var(--peach-soft);
-            box-shadow: 0 8px 22px rgba(200, 109, 97, 0.12);
-        }
+    .hawan-graphic-box {
+      width: 155px;
+      height: 155px;
+      margin: 0 auto 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle, var(--bg-warm-white) 0%, #F7E5EF 100%);
+      border-radius: 50%;
+      border: 1.5px solid var(--peach-soft);
+      box-shadow: 0 8px 22px rgba(120, 85, 138, 0.12);
+    }
 
-        .scratch-wrapper {
-            position: relative;
-            width: 300px;
-            height: 120px;
-            margin: 0 auto 30px;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 25px rgba(158, 75, 65, 0.16);
-            border: 2px solid var(--peach-soft);
-            background: #FFFDF9;
-        }
+    .scratch-wrapper {
+      position: relative;
+      width: 300px;
+      max-width: 100%;
+      height: 120px;
+      margin: 0 auto 30px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(96, 65, 111, 0.16);
+      border: 2px solid var(--peach-soft);
+      background: #FFFDF9;
+    }
 
-        .scratch-revealed-content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: radial-gradient(circle, #FFFDF9 0%, #F9ECE6 100%);
-            z-index: 1;
-        }
+    .scratch-revealed-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle, var(--bg-warm-white) 0%, #F9ECF4 100%);
+      z-index: 1;
+    }
 
-        .revealed-label {
-            font-family: 'Cormorant Garamond', serif;
-            font-style: italic;
-            font-size: 1.15rem;
-            color: var(--peach-deep);
-        }
+    .revealed-label {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--peach-deep);
+    }
 
-        .revealed-date {
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1.65rem;
-            font-weight: 700;
-            color: var(--peach-dark);
-            letter-spacing: 2px;
-            margin-top: 2px;
-        }
+    .revealed-date {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 1.65rem;
+      font-weight: 700;
+      color: var(--peach-dark);
+      letter-spacing: 2px;
+      margin-top: 2px;
+    }
 
-        #scratch-canvas {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 2;
-            cursor: grab;
-            touch-action: none;
-            transition: opacity 0.6s ease;
-        }
+    #scratch-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      cursor: grab;
+      touch-action: none;
+      transition: opacity 0.6s ease;
+    }
 
-        .blessing-para {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.18rem;
-            line-height: 1.65;
-            color: var(--text-primary);
-            max-width: 340px;
-            margin: 10px auto 34px;
-        }
+    .blessing-para {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.18rem;
+      line-height: 1.65;
+      color: var(--text-primary);
+      max-width: 340px;
+      margin: 10px auto 34px;
+    }
 
-        .countdown-grid {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
+    .countdown-grid {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
 
-        .count-card {
-            background: #FFFDF9;
-            border: 1px solid var(--peach-soft);
-            border-radius: 12px;
-            width: 72px;
-            padding: 14px 6px;
-            box-shadow: 0 6px 16px rgba(200, 109, 97, 0.08);
-        }
+    .count-card {
+      background: #FFFDF9;
+      border: 1px solid var(--peach-soft);
+      border-radius: 12px;
+      width: 72px;
+      padding: 14px 6px;
+      box-shadow: 0 6px 16px rgba(120, 85, 138, 0.08);
+    }
 
-        .count-card h3 {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--peach-dark);
-        }
+    .count-card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--peach-dark);
+    }
 
-        .count-card span {
-            font-size: 0.68rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--text-soft);
-            display: block;
-            margin-top: 2px;
-        }
+    .count-card span {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-soft);
+      display: block;
+      margin-top: 2px;
+    }
 
-        /* =========================================
+    /* =========================================
            SLIDE 4: TWO HEARTS, ONE JOURNEY
            ========================================= */
-        .grandparents-tag {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.05rem;
-            color: var(--peach-dark);
-            font-weight: 600;
-            margin-bottom: 24px;
-        }
+    .grandparents-tag {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      color: var(--peach-dark);
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
 
-        .portrait-card {
-            margin: 10px auto;
-            max-width: 310px;
-        }
+    .portrait-card {
+      margin: 10px auto;
+      max-width: 310px;
+    }
 
-        .portrait-frame {
-            width: 260px;
-            height: 300px;
-            margin: 0 auto 14px;
-            border-radius: 22px;
-            overflow: hidden;
-            border: 3px solid var(--peach-soft);
-            box-shadow: 0 12px 28px rgba(158, 75, 65, 0.16);
-            background: #FFFDF9;
-        }
+    .portrait-frame {
+      width: 260px;
+      height: 300px;
+      margin: 0 auto 14px;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 3px solid var(--peach-soft);
+      box-shadow: 0 12px 28px rgba(96, 65, 111, 0.16);
+      background: #FFFDF9;
+    }
 
-        .portrait-frame img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.8s ease;
-        }
+    .portrait-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s ease;
+    }
 
-        .portrait-frame:hover img {
-            transform: scale(1.04);
-        }
+    .portrait-frame:hover img {
+      transform: scale(1.04);
+    }
 
-        .solo-name {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.7rem;
-            color: var(--peach-dark);
-            line-height: 1.1;
-        }
+    .solo-name {
+      font-size: 2.7rem;
+      color: var(--peach-dark);
+      line-height: 1.1;
+    }
 
-        .solo-parents {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.08rem;
-            color: var(--text-soft);
-            margin-top: 3px;
-        }
+    .solo-parents {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.08rem;
+      color: var(--text-soft);
+      margin-top: 3px;
+    }
 
-        .ampersand-divider {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.8rem;
-            color: var(--peach-deep);
-            margin: 16px 0;
-        }
+    .ampersand-divider {
+      font-size: 2.8rem;
+      color: var(--peach-deep);
+      margin: 16px 0;
+    }
 
-        /* =========================================
+    /* =========================================
            SLIDE 5: THE CELEBRATIONS TIMELINE
            ========================================= */
-        .timeline-container {
-            position: relative;
-            max-width: 350px;
-            margin: 30px auto 10px;
-            padding-left: 34px;
-            text-align: left;
-        }
+    .timeline-container {
+      position: relative;
+      max-width: 350px;
+      margin: 30px auto 10px;
+      padding-left: 34px;
+      text-align: left;
+    }
 
-        .timeline-container::before {
-            content: "";
-            position: absolute;
-            left: 11px;
-            top: 8px;
-            bottom: 20px;
-            width: 2px;
-            background: linear-gradient(180deg, var(--peach-pink), var(--peach-soft));
-        }
+    .timeline-container::before {
+      content: "";
+      position: absolute;
+      left: 11px;
+      top: 8px;
+      bottom: 20px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--peach-pink), var(--peach-soft));
+    }
 
-        .timeline-item {
-            position: relative;
-            margin-bottom: 38px;
-        }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 38px;
+    }
 
-        .timeline-heart {
-            position: absolute;
-            left: -31px;
-            top: 4px;
-            width: 18px;
-            height: 18px;
-            background: var(--peach-deep);
-            color: var(--bg-warm-white);
-            border-radius: 50%;
-            font-size: 0.65rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 0 0 4px #FBF2EC;
-        }
+    .timeline-heart {
+      position: absolute;
+      left: -31px;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      background: var(--peach-deep);
+      color: var(--bg-warm-white);
+      border-radius: 50%;
+      font-size: 0.65rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 0 4px #FCF2F8;
+    }
 
-        .event-header-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 4px;
-        }
+    .event-header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
 
-        .event-title {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.55rem;
-            font-weight: 700;
-            color: var(--peach-dark);
-        }
+    .event-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--peach-dark);
+    }
 
-        .event-time {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--peach-deep);
-        }
+    .event-time {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--peach-deep);
+    }
 
-        .event-date-row {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.88rem;
-            color: var(--text-primary);
-            font-weight: 500;
-            margin-bottom: 6px;
-        }
+    .event-date-row {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      color: var(--text-primary);
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
 
-        .event-venue {
-            font-size: 0.88rem;
-            color: var(--text-soft);
-            line-height: 1.45;
-            margin-bottom: 14px;
-        }
+    .event-venue {
+      font-size: 0.88rem;
+      color: var(--text-soft);
+      line-height: 1.45;
+      margin-bottom: 14px;
+    }
 
-        .direction-btn {
-            display: block;
-            width: 100%;
-            padding: 12px 16px;
-            background-color: var(--peach-deep);
-            color: var(--bg-warm-white);
-            text-align: center;
-            text-decoration: none;
-            border-radius: 10px;
-            font-size: 0.88rem;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            box-shadow: 0 6px 16px rgba(200, 109, 97, 0.24);
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
+    .direction-btn {
+      display: block;
+      width: 100%;
+      padding: 12px 16px;
+      background-color: var(--peach-deep);
+      color: var(--bg-warm-white);
+      text-align: center;
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      box-shadow: 0 6px 16px rgba(120, 85, 138, 0.24);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
 
-        .direction-btn:active {
-            transform: scale(0.98);
-        }
+    .direction-btn:active {
+      transform: scale(0.98);
+    }
 
-        /* =========================================
+    /* =========================================
            SLIDE 6: A LEGACY OF LOVE GALLERY
            ========================================= */
-        .gallery-slider {
-            display: flex;
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            gap: 14px;
-            padding: 10px 6px 20px;
-            scrollbar-width: none;
-        }
+    .gallery-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 14px;
+      padding: 10px 6px 20px;
+      scrollbar-width: none;
+    }
 
-        .gallery-slider::-webkit-scrollbar {
-            display: none;
-        }
+    .gallery-slider::-webkit-scrollbar {
+      display: none;
+    }
 
-        .gallery-slide {
-            flex: 0 0 84%;
-            scroll-snap-align: center;
-            height: 240px;
-            border-radius: 18px;
-            overflow: hidden;
-            border: 3px solid #FFFDF9;
-            box-shadow: 0 10px 24px rgba(158, 75, 65, 0.16);
-        }
+    .gallery-slide {
+      flex: 0 0 84%;
+      scroll-snap-align: center;
+      height: 240px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 3px solid #FFFDF9;
+      box-shadow: 0 10px 24px rgba(96, 65, 111, 0.16);
+    }
 
-        .gallery-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    .gallery-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-        /* =========================================
+    /* =========================================
            SLIDE 7: WILL YOU JOIN US? (RSVP)
            ========================================= */
-        .rsvp-form {
-            text-align: left;
-            max-width: 350px;
-            margin: 10px auto 0;
-        }
+    /* .rsvp-form {
+      text-align: left;
+      max-width: 350px;
+      margin: 10px auto 0;
+    }
 
-        .form-group {
-            margin-bottom: 20px;
-        }
+    .form-group {
+      margin-bottom: 20px;
+    }
 
-        .form-label {
-            display: block;
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.15rem;
-            font-weight: 600;
-            color: var(--peach-dark);
-            margin-bottom: 8px;
-        }
+    .form-label {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--peach-dark);
+      margin-bottom: 8px;
+    }
 
-        .form-input {
-            width: 100%;
-            padding: 10px 4px;
-            border: none;
-            border-bottom: 1.5px solid var(--peach-soft);
-            background: transparent;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.92rem;
-            color: var(--text-primary);
-            outline: none;
-        }
+    .form-input {
+      width: 100%;
+      padding: 10px 4px;
+      border: none;
+      border-bottom: 1.5px solid var(--peach-soft);
+      background: transparent;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.92rem;
+      color: var(--text-primary);
+      outline: none;
+    }
 
-        .form-input::placeholder {
-            color: #B98B84;
-        }
+    .form-input::placeholder {
+      color: var(--text-soft);
+    }
 
-        .toggle-row {
-            display: flex;
-            gap: 10px;
-        }
+    .toggle-row {
+      display: flex;
+      gap: 10px;
+    }
 
-        .choice-btn {
-            flex: 1;
-            padding: 11px 10px;
-            border-radius: 10px;
-            border: 1.5px solid var(--peach-soft);
-            background: #FFFDF9;
-            color: var(--peach-dark);
-            font-size: 0.85rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.25s ease;
-        }
+    .choice-btn {
+      flex: 1;
+      padding: 11px 10px;
+      border-radius: 10px;
+      border: 1.5px solid var(--peach-soft);
+      background: #FFFDF9;
+      color: var(--peach-dark);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
 
-        .choice-btn.active {
-            background: var(--peach-deep);
-            color: var(--bg-warm-white);
-            border-color: var(--peach-deep);
-        }
+    .choice-btn.active {
+      background: var(--peach-deep);
+      color: var(--bg-warm-white);
+      border-color: var(--peach-deep);
+    }
 
-        .guest-counter {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #FFFDF9;
-            border: 1.5px solid var(--peach-soft);
-            border-radius: 10px;
-            padding: 8px 16px;
-        }
+    .guest-counter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #FFFDF9;
+      border: 1.5px solid var(--peach-soft);
+      border-radius: 10px;
+      padding: 8px 16px;
+    }
 
-        .counter-circle {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            border: 1px solid var(--peach-deep);
-            background: transparent;
-            color: var(--peach-dark);
-            font-size: 1.1rem;
-            cursor: pointer;
-        }
+    .counter-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--peach-deep);
+      background: transparent;
+      color: var(--peach-dark);
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
 
-        .submit-rsvp-btn {
-            width: 100%;
-            padding: 14px;
-            background: linear-gradient(135deg, var(--peach-deep), var(--peach-dark));
-            color: var(--bg-warm-white);
-            border: none;
-            border-radius: 12px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            letter-spacing: 0.8px;
-            cursor: pointer;
-            margin-top: 8px;
-            box-shadow: 0 8px 20px rgba(158, 75, 65, 0.25);
-        }
+    .submit-rsvp-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, var(--peach-deep), var(--peach-dark));
+      color: var(--bg-warm-white);
+      border: none;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      cursor: pointer;
+      margin-top: 8px;
+      box-shadow: 0 8px 20px rgba(96, 65, 111, 0.25);
+    } */
 
-        /* =========================================
-           SLIDE 8: REGARDS ENVELOPE FOOTER
+    /* =========================================
+           SLIDE 8: COMPACT DIGITAL SIGN-OFF
            ========================================= */
-        .footer-envelope-section {
-            padding: 50px 20px 65px;
-            background: linear-gradient(180deg, var(--bg-warm-white) 0%, #F5DFD8 100%);
-            text-align: center;
-            position: relative;
-        }
+    .invitation-footer {
+      padding: 30px 24px 34px;
+      background: linear-gradient(180deg, var(--bg-warm-white) 0%, #F5DFEE 100%);
+      text-align: center;
+    }
 
-        .regards-card {
-            background: #FFFDF9;
-            border: 2px solid var(--peach-soft);
-            border-radius: 16px;
-            padding: 32px 20px 42px;
-            max-width: 340px;
-            margin: 0 auto;
-            box-shadow: 0 12px 30px rgba(158, 75, 65, 0.14);
-            position: relative;
-        }
+    .closing-note {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      color: var(--text-soft);
+      max-width: 320px;
+      margin: 0 auto;
+    }
 
-        .regards-title {
-            font-family: 'Great Vibes', cursive;
-            font-size: 2.5rem;
-            color: var(--peach-dark);
-            margin-bottom: 4px;
-        }
+    @media (max-height: 600px) {
+      .ganesh-top {
+        width: 90px;
+        margin-bottom: 6px;
+      }
+      .await-text {
+        margin-bottom: 12px;
+      }
+      .wax-seal {
+        width: 90px;
+        height: 90px;
+      }
+      .wax-seal::after {
+        width: 70px;
+        height: 70px;
+      }
+      .click-open-label {
+        margin-top: 12px;
+      }
+    }
 
-        .regards-sub {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.1rem;
-            color: var(--text-soft);
-            margin-bottom: 20px;
-        }
-
-        .contact-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 6px;
-            border-bottom: 1px dashed var(--peach-soft);
-            font-size: 0.9rem;
-        }
-
-        .contact-row:last-of-type {
-            border-bottom: none;
-        }
-
-        .contact-name {
-            font-weight: 600;
-            color: var(--peach-dark);
-        }
-
-        .contact-phone {
-            color: var(--peach-deep);
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .footer-seal {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            background: radial-gradient(circle at 30% 30%, #F7E1A8, #D1A54C 65%, #9E7727 100%);
-            margin: -28px auto 0;
-            position: relative;
-            z-index: 5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0 6px 16px rgba(158, 75, 65, 0.25);
-            border: 2px solid #FFFDF9;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 0.85rem;
-            font-weight: 700;
-            color: #6E3B35;
-        }
-
-        .closing-note {
-            margin-top: 22px;
-            font-family: 'Cormorant Garamond', serif;
-            font-style: italic;
-            font-size: 1.05rem;
-            color: var(--peach-dark);
-        }
-    </style>
+    @media (prefers-reduced-motion: reduce) {
+      .mantra-top {
+        animation: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- Continuous Loop Background Audio (Place 'wedding-music.mp3' in the same folder) -->
-    <audio id="wedding-audio" loop preload="auto">
-        <source src="wedding-music.mp3" type="audio/mpeg">
-        <source src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_946b0939c8.mp3" type="audio/mpeg">
-    </audio>
+  <!-- Continuous Loop Background Audio (Place 'wedding-music.mp3' in the same folder) -->
+  <audio id="wedding-audio" loop preload="auto">
+    <source src="wedding-music.mp3" type="audio/mpeg">
+    <source src="https://cdn.pixabay.com/download/audio/2022/10/25/audio_946b0939c8.mp3" type="audio/mpeg">
+  </audio>
 
-    <button id="music-control" onclick="toggleAudio()" title="Toggle Music">🔊</button>
+  <button id="music-control" onclick="toggleAudio()" title="Toggle Music">🔊</button>
 
-    <div class="mobile-wrapper">
+  <div class="mobile-wrapper">
 
-        <!-- =========================================
+    <!-- =========================================
              SLIDE 1: 4-FLAP ENVELOPE OPENING
              ========================================= -->
-        <div id="envelope-overlay">
-            <div class="flap flap-top"></div>
-            <div class="flap flap-bottom"></div>
-            <div class="flap flap-left"></div>
-            <div class="flap flap-right"></div>
+    <div id="envelope-overlay">
+      <div class="flap flap-top"></div>
+      <div class="flap flap-bottom"></div>
+      <div class="flap flap-left"></div>
+      <div class="flap flap-right"></div>
 
-            <div class="envelope-content">
-                <?xml version="1.0" encoding="iso-8859-1"?>
-                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!-- License: CC0. Made by SVG Repo: https://www.svgrepo.com/svg/103555/ganesha -->
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 58 58"
-                    style="enable-background:new 0 0 58 58;" xml:space="preserve">
-                    <path style="fill:#F3D55B;"
-                        d="M39.343,18.541C37.11,17.393,33.785,16.5,28.844,16.5c-4.639,0-7.853,0.787-10.077,1.833
-                        c-3.211,1.511-5.071,4.918-4.671,8.444C14.712,32.213,16.964,42.5,24,42.5c0,0-0.25-4.292,1-7l0,0c2.209,2.209,5.791,2.209,8,0l0,0
-                        c1.235,2.676,1.006,6.916,1,6.993c6.915-0.153,8.984-10.339,9.594-15.73C43.973,23.412,42.342,20.083,39.343,18.541z" />
-                    <path style="fill:#8697CB;"
-                        d="M14.096,26.777c-0.393-3.464,1.404-6.803,4.512-8.353c-2.513-2.449-5.74-3.925-9.264-3.925
-                        c-3.055,0-5.89,1.108-8.228,3l0.768,1.876c3.144,7.685,2.726,16.367-1.143,23.714L0,44.5c1.957,1.936,4.36,3.264,7,3.768V46.5
-                        c0-1.1,0.9-2,2-2s2,0.9,2,2v1.887c4.02-0.539,7.534-3.011,9.868-6.598C16.184,39.371,14.615,31.354,14.096,26.777z" />
-                    <path style="fill:#8697CB;" d="M47,46.5c0-1.1,0.9-2,2-2s2,0.9,2,2v1.768c2.64-0.504,5.043-1.832,7-3.768l-0.742-1.409
-                        c-3.868-7.347-4.287-16.029-1.143-23.714l0.768-1.876c-2.338-1.892-5.172-3-8.228-3c-3.567,0-6.828,1.516-9.354,4.021
-                        c0.013,0.007,0.028,0.013,0.041,0.019c2.999,1.542,4.63,4.871,4.252,8.222c-0.509,4.499-2.035,12.336-6.545,14.897
-                        c2.333,3.657,5.883,6.183,9.951,6.728V46.5z" />
-                    <ellipse transform="matrix(0.7071 0.7071 -0.7071 0.7071 27.2353 -5.6252)" style="fill:#ECF0F1;"
-                        cx="20.408" cy="30.063" rx="7.142" ry="3.296" />
-                    <path style="fill:#F0C419;" d="M33,19.5h-2c-0.552,0-1,0.447-1,1s0.448,1,1,1v4c0,1.103-0.897,2-2,2s-2-0.897-2-2v-4
-                        c0.552,0,1-0.447,1-1s-0.448-1-1-1h-2c-0.552,0-1,0.447-1,1s0.448,1,1,1v4c0,2.206,1.794,4,4,4s4-1.794,4-4v-4c0.552,0,1-0.447,1-1
-                        S33.552,19.5,33,19.5z" />
-                    <circle style="fill:#556080;" cx="7.5" cy="20" r="2.5" />
-                    <circle style="fill:#556080;" cx="50.5" cy="20" r="2.5" />
-                    <ellipse transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 85.3826 24.76)" style="fill:#ECF0F1;"
-                        cx="37.563" cy="30.063" rx="7.142" ry="3.296" />
-                    <path
-                        style="fill:none;stroke:#556080;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
-                        d="
-                        M9,51.5L9,51.5c-1.1,0-2-0.9-2-2v-4c0-1.1,0.9-2,2-2h0c1.1,0,2,0.9,2,2v4C11,50.6,10.1,51.5,9,51.5z" />
-                    <path
-                        style="fill:none;stroke:#556080;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
-                        d="
-                        M49,51.5L49,51.5c-1.1,0-2-0.9-2-2v-4c0-1.1,0.9-2,2-2h0c1.1,0,2,0.9,2,2v4C51,50.6,50.1,51.5,49,51.5z" />
-                    <ellipse style="fill:#A4E869;" cx="28.5" cy="7.5" rx="5.5" ry="7" />
-                    <path style="fill:#F29C1F;"
-                        d="M28.5,11.5c-1.183,0-2.5-1.643-2.5-4s1.317-4,2.5-4s2.5,1.643,2.5,4S29.683,11.5,28.5,11.5z" />
-                    <path style="fill:#F0C419;" d="M41.66,10.5c0,0-2.755-3.317-5.91-2.332c-0.854,0.267-1.552,0.852-2.049,1.59
-                        c-0.532,1.984-1.743,3.563-3.282,4.294c-0.517,0.276-1.101,0.447-1.76,0.447c-0.028,0-0.054-0.004-0.082-0.005
-                        c-0.026,0-0.052,0.005-0.078,0.005c-2.571,0-4.723-2.248-5.326-5.281c-0.441-0.475-0.975-0.854-1.603-1.05
-                        c-3.155-0.986-5.91,2.332-5.91,2.332c-1.568,1.568-1.843,3.336-1.568,4.945c1.66,0.676,3.187,1.686,4.511,2.976
-                        c0.056-0.028,0.107-0.061,0.164-0.087c2.224-1.046,5.438-1.833,10.077-1.833c4.912,0,8.224,0.883,10.457,2.021
-                        c1.146-1.136,2.448-2.055,3.856-2.735C43.534,14.088,43.339,12.178,41.66,10.5z" />
-                    <circle style="fill:#556080;" cx="22" cy="31.5" r="1" />
-                    <circle style="fill:#556080;" cx="36" cy="31.5" r="1" />
-                    <path style="fill:#F3D55B;" d="M34.02,41.369c-0.014-1.458-0.172-4.032-1.02-5.869c-2.209,2.209-5.791,2.209-8,0
-                        c-0.856,1.855-1.009,4.452-1.02,5.905C23.984,42.075,24,42.5,24,42.5s-0.938,15,5,15c5.937,0,5-15,5-15S34.017,42.059,34.02,41.369z
-                        " />
-                    <path style="fill:#D8BF52;"
-                        d="M31,43.5h-4c-0.552,0-1-0.447-1-1s0.448-1,1-1h4c0.552,0,1,0.447,1,1S31.552,43.5,31,43.5z" />
-                    <path style="fill:#D8BF52;"
-                        d="M30,54.5h-2c-0.552,0-1-0.447-1-1s0.448-1,1-1h2c0.552,0,1,0.447,1,1S30.552,54.5,30,54.5z" />
-                    <path style="fill:#D8BF52;"
-                        d="M31,49.5h-4c-0.552,0-1-0.447-1-1s0.448-1,1-1h4c0.552,0,1,0.447,1,1S31.552,49.5,31,49.5z" />
-                </svg>
+      <div class="envelope-content">
+        <svg class="ganesh-top" viewBox="0 0 180 200" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-labelledby="ganesh-title">
+          <title id="ganesh-title">Lord Ganesha seated on a lotus, with a traditional crown</title>
+          <circle cx="90" cy="92" r="76" fill="var(--bg-warm-white)" fill-opacity="0.7"
+            stroke="var(--gold-accent)" stroke-width="1.2" />
+          <circle cx="90" cy="92" r="69" fill="none" stroke="var(--gold-accent)"
+            stroke-width="0.8" stroke-dasharray="2 5" />
+          <g stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <g fill="var(--peach-soft)">
+              <path d="M65 103 C48 100 44 83 37 77 C31 72 25 79 29 87 L47 117" />
+              <path d="M115 103 C132 100 136 83 143 77 C149 72 155 79 151 87 L133 117" />
+              <path d="M61 116 C41 113 26 124 32 142 C38 153 53 146 65 138" />
+              <path d="M119 116 C139 113 154 124 148 142 C142 153 127 146 115 138" />
+              <path d="M68 103 C54 117 54 146 69 156 L111 156 C126 146 126 117 112 103 Z" />
+              <path d="M70 148 C53 137 35 145 34 156 C32 173 65 177 90 163 C115 177 148 173 146 156 C145 145 127 137 110 148" />
+              <path d="M66 59 C46 42 34 54 38 73 C40 89 49 100 65 94 Z" />
+              <path d="M114 59 C134 42 146 54 142 73 C140 89 131 100 115 94 Z" />
+            </g>
+            <g fill="none">
+              <path d="M51 61 C44 68 48 83 57 86 M129 61 C136 68 132 83 123 86" />
+              <path d="M72 112 Q90 127 108 112" stroke="var(--gold-accent)" stroke-width="4" />
+              <path d="M64 156 Q77 158 90 163 Q103 158 116 156" />
+            </g>
+            <path d="M66 53 C62 70 62 89 75 98 L78 120 C80 136 106 142 111 125 C114 114 106 111 101 116 C108 126 93 130 92 118 L96 95 C116 91 121 65 112 53 Z"
+              fill="var(--bg-warm-white)" />
+            <path d="M73 89 L67 106 L79 100 M106 89 L113 101 L101 97"
+              fill="var(--bg-warm-white)" />
+            <path d="M73 75 Q78 71 82 75 M100 75 Q105 71 109 75" fill="none" />
+            <path d="M85 60 V67 Q90 73 95 67 V60 M90 58 V67" fill="none"
+              stroke="var(--gold-accent)" stroke-width="2" />
+            <path d="M64 54 L60 37 L75 40 L81 25 L90 15 L99 25 L105 40 L120 37 L116 54 Z"
+              fill="var(--gold-light)" />
+            <path d="M65 47 H115 M80 40 L90 26 L100 40" fill="none"
+              stroke="var(--gold-accent)" stroke-width="2" />
+            <path d="M90 35 L95 41 L90 47 L85 41 Z" fill="currentColor" stroke="none" />
+            <circle cx="90" cy="13" r="3" fill="var(--gold-accent)" stroke="none" />
+            <path d="M38 131 V119 Q38 115 41 118 L44 129 M42 124 L46 121 M41 135 Q47 136 49 131"
+              fill="none" />
+            <path d="M130 133 Q138 139 145 133" fill="none" />
+            <path d="M132 130 L138 119 L144 130 Z" fill="var(--gold-light)"
+              stroke="var(--gold-accent)" stroke-width="1.5" />
+            <path d="M34 77 L30 61 M25 57 Q29 66 35 62 L39 55" fill="none"
+              stroke="var(--gold-accent)" />
+            <path d="M146 76 V58 M139 59 Q146 48 153 59 Q146 67 139 59 Z" fill="none"
+              stroke="var(--gold-accent)" />
+            <g fill="var(--peach-soft)" stroke="var(--gold-accent)" stroke-width="1.5">
+              <path d="M90 188 Q71 182 67 168 Q84 167 90 180 Q96 167 113 168 Q109 182 90 188 Z" />
+              <path d="M90 188 Q60 191 47 175 Q68 170 90 188 Q112 170 133 175 Q120 191 90 188 Z" />
+              <path d="M90 188 Q48 194 32 183 Q55 177 90 188 Q125 177 148 183 Q132 194 90 188 Z" />
+            </g>
+          </g>
+        </svg>
 
-                <div class="mantra-top">॥ श्री गणेशाय नमः ॥</div>
-                <div class="await-text">A Special Day Awaits</div>
+        <div class="mantra-top" lang="sa">
+          <span class="mantra-invocation">॥ श्री गणेशाय नमः ॥</span>
+          वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ।<br>
+          निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा ॥
+        </div>
+        <div class="await-text">A Special Day Awaits</div>
 
-                <div class="wax-seal" onclick="openEnvelope()">
-                    <span class="seal-initials">D & A</span>
-                </div>
-
-                <div class="click-open-label" onclick="openEnvelope()">Click to open</div>
-            </div>
+        <div class="wax-seal" onclick="openEnvelope()">
+          <span class="seal-initials">D & A</span>
         </div>
 
-        <!-- =========================================
+        <div class="click-open-label" onclick="openEnvelope()">Click to open</div>
+      </div>
+    </div>
+
+    <!-- =========================================
              SLIDE 2: HERO COUPLE COVER
              ========================================= -->
-        <section class="hero-section" id="hero-sec">
-            <div class="hero-bg"></div>
-            <div class="hero-gradient"></div>
+    <section class="hero-section" id="hero-sec">
+      <div class="hero-bg"></div>
+      <div class="hero-gradient"></div>
 
-            <div class="hero-top-mantra">॥ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ ॥</div>
+      <div class="hero-bottom-content">
+        <div class="hero-names">
+          Dikshit
+          <span>&</span>
+          Aditi
+        </div>
+        <div class="scroll-cue">
+          <span>SCROLL</span>
+          <span style="font-size: 1.1rem; margin-top: 2px;">⌄</span>
+        </div>
+      </div>
+    </section>
 
-            <div class="hero-bottom-content">
-                <div class="hero-names">
-                    Dikshit
-                    <span>&</span>
-                    Aditi
-                </div>
-                <div class="scroll-cue">
-                    <span>SCROLL</span>
-                    <span style="font-size: 1.1rem; margin-top: 2px;">⌄</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- =========================================
+    <!-- =========================================
              SLIDE 3: TRADITIONAL HAWAN GRAPHIC + SCRATCH TO REVEAL
              ========================================= -->
-        <section class="section bg-warm">
-            <div class="reveal">
-                <!-- Traditional Sacred Hawan / Wedding Kalash & Agni Illustration -->
-                <div class="hawan-graphic-box">
-                    <svg viewBox="0 0 180 180" width="128" height="128" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Sacred Mandala Halo -->
-                        <circle cx="90" cy="90" r="76" stroke="#E8998D" stroke-width="1.2" stroke-dasharray="4 4" />
-                        <circle cx="90" cy="90" r="66" stroke="#C59B48" stroke-width="1" />
-                        <!-- Sacred Hawan Fire Flames -->
-                        <path
-                            d="M90 36 C96 50 108 58 104 74 C101 84 95 88 90 90 C85 88 79 84 76 74 C72 58 84 50 90 36 Z"
-                            fill="#F4C2B8" stroke="#9E4B41" stroke-width="1.8" />
-                        <path d="M90 50 C94 59 99 65 96 75 C94 81 91 84 90 85 C89 84 86 81 84 75 C81 65 86 59 90 50 Z"
-                            fill="#FDF9F3" stroke="#C86D61" stroke-width="1.4" />
-                        <!-- Side Sparkles / Flowers -->
-                        <circle cx="62" cy="64" r="2.5" fill="#C59B48" />
-                        <circle cx="118" cy="64" r="2.5" fill="#C59B48" />
-                        <circle cx="56" cy="82" r="2" fill="#E8998D" />
-                        <circle cx="124" cy="82" r="2" fill="#E8998D" />
-                        <!-- Sacred Wood Logs -->
-                        <rect x="64" y="88" width="52" height="6" rx="3" transform="rotate(-10 64 88)" fill="#E8998D"
-                            stroke="#9E4B41" stroke-width="1.4" />
-                        <rect x="64" y="82" width="52" height="6" rx="3" transform="rotate(10 64 82)" fill="#F4C2B8"
-                            stroke="#9E4B41" stroke-width="1.4" />
-                        <!-- Traditional Hawan Kund (Stepped Altar) -->
-                        <path d="M50 96 H130 L122 108 H58 L50 96 Z" fill="#FDF9F3" stroke="#9E4B41" stroke-width="1.8"
-                            stroke-linejoin="round" />
-                        <path d="M58 108 H122 L114 122 H66 L58 108 Z" fill="#F4C2B8" stroke="#9E4B41" stroke-width="1.8"
-                            stroke-linejoin="round" />
-                        <path d="M46 122 H134 V131 H46 V122 Z" fill="#E8998D" stroke="#9E4B41" stroke-width="1.8"
-                            stroke-linejoin="round" />
-                        <!-- Swastik / Sacred Dot Motif on Kund -->
-                        <circle cx="90" cy="115" r="2.5" fill="#9E4B41" />
-                        <circle cx="76" cy="115" r="1.8" fill="#9E4B41" />
-                        <circle cx="104" cy="115" r="1.8" fill="#9E4B41" />
-                    </svg>
-                </div>
+    <section class="section bg-warm">
+      <div class="reveal">
+        <!-- Traditional Sacred Hawan / Wedding Kalash & Agni Illustration -->
+        <div class="hawan-graphic-box">
+          <svg viewBox="0 0 180 180" width="128" height="128" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Sacred Mandala Halo -->
+            <circle cx="90" cy="90" r="76" stroke="var(--peach-pink)" stroke-width="1.2" stroke-dasharray="4 4" />
+            <circle cx="90" cy="90" r="66" stroke="#C59B48" stroke-width="1" />
+            <!-- Sacred Hawan Fire Flames -->
+            <path d="M90 36 C96 50 108 58 104 74 C101 84 95 88 90 90 C85 88 79 84 76 74 C72 58 84 50 90 36 Z"
+              fill="var(--peach-soft)" stroke="var(--peach-dark)" stroke-width="1.8" />
+            <path d="M90 50 C94 59 99 65 96 75 C94 81 91 84 90 85 C89 84 86 81 84 75 C81 65 86 59 90 50 Z"
+              fill="var(--bg-warm-white)" stroke="var(--peach-deep)" stroke-width="1.4" />
+            <!-- Side Sparkles / Flowers -->
+            <circle cx="62" cy="64" r="2.5" fill="#C59B48" />
+            <circle cx="118" cy="64" r="2.5" fill="#C59B48" />
+            <circle cx="56" cy="82" r="2" fill="var(--peach-pink)" />
+            <circle cx="124" cy="82" r="2" fill="var(--peach-pink)" />
+            <!-- Sacred Wood Logs -->
+            <rect x="64" y="88" width="52" height="6" rx="3" transform="rotate(-10 64 88)" fill="var(--peach-pink)"
+              stroke="var(--peach-dark)" stroke-width="1.4" />
+            <rect x="64" y="82" width="52" height="6" rx="3" transform="rotate(10 64 82)" fill="var(--peach-soft)"
+              stroke="var(--peach-dark)" stroke-width="1.4" />
+            <!-- Traditional Hawan Kund (Stepped Altar) -->
+            <path d="M50 96 H130 L122 108 H58 L50 96 Z" fill="var(--bg-warm-white)" stroke="var(--peach-dark)" stroke-width="1.8"
+              stroke-linejoin="round" />
+            <path d="M58 108 H122 L114 122 H66 L58 108 Z" fill="var(--peach-soft)" stroke="var(--peach-dark)" stroke-width="1.8"
+              stroke-linejoin="round" />
+            <path d="M46 122 H134 V131 H46 V122 Z" fill="var(--peach-pink)" stroke="var(--peach-dark)" stroke-width="1.8"
+              stroke-linejoin="round" />
+            <!-- Swastik / Sacred Dot Motif on Kund -->
+            <circle cx="90" cy="115" r="2.5" fill="var(--peach-dark)" />
+            <circle cx="76" cy="115" r="1.8" fill="var(--peach-dark)" />
+            <circle cx="104" cy="115" r="1.8" fill="var(--peach-dark)" />
+          </svg>
+        </div>
 
-                <h2 class="script-heading">Surprise For You!</h2>
-                <p class="sub-caption">Scratch to reveal our special day</p>
+        <h2 class="script-heading">Surprise For You!</h2>
+        <p class="sub-caption" id="scratch-instruction">Scratch to reveal our special day</p>
 
-                <div class="scratch-wrapper" id="scratch-box">
-                    <div class="scratch-revealed-content">
-                        <span class="revealed-label">Our Forever Begins</span>
-                        <div class="revealed-date">02 . 12 . 26</div>
-                    </div>
-                    <canvas id="scratch-canvas" width="300" height="120"></canvas>
-                </div>
+        <div class="scratch-wrapper" id="scratch-box">
+          <div class="scratch-revealed-content">
+            <span class="revealed-label">Our Forever Begins</span>
+            <div class="revealed-date">02 . 12 . 26</div>
+          </div>
+          <canvas id="scratch-canvas" width="300" height="120"></canvas>
+        </div>
 
-                <p class="blessing-para">
-                    With the heartfelt blessings of our families, we warmly invite you to join us in celebrating the
-                    joyous union of Dikshit &amp; Aditi.
-                </p>
+        <p class="blessing-para">
+          With the heartfelt blessings of our families, we warmly invite you to join us in celebrating the
+          joyous union of Dikshit &amp; Aditi.
+        </p>
 
-                <h3 class="script-heading" style="font-size: 2.3rem; margin-bottom: 18px;">Counting Down to Forever</h3>
-                <div class="countdown-grid">
-                    <div class="count-card">
-                        <h3 id="cd-days">00</h3><span>Days</span>
-                    </div>
-                    <div class="count-card">
-                        <h3 id="cd-hours">00</h3><span>Hours</span>
-                    </div>
-                    <div class="count-card">
-                        <h3 id="cd-mins">00</h3><span>Minutes</span>
-                    </div>
-                    <div class="count-card">
-                        <h3 id="cd-secs">00</h3><span>Seconds</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <h3 class="script-heading" style="font-size: 2.3rem; margin-bottom: 18px;">Counting Down to Forever</h3>
+        <div class="countdown-grid">
+          <div class="count-card">
+            <h3 id="cd-days">00</h3><span>Days</span>
+          </div>
+          <div class="count-card">
+            <h3 id="cd-hours">00</h3><span>Hours</span>
+          </div>
+          <div class="count-card">
+            <h3 id="cd-mins">00</h3><span>Minutes</span>
+          </div>
+          <div class="count-card">
+            <h3 id="cd-secs">00</h3><span>Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- =========================================
+    <!-- =========================================
              SLIDE 4: TWO HEARTS, ONE JOURNEY
              ========================================= -->
-        <section class="section bg-peach-tint">
-            <div class="reveal">
-                <h2 class="script-heading">Two Hearts, One Journey</h2>
-                <!-- <p class="grandparents-tag">G/S/o Parsadi Lal &amp; Ramdai</p> -->
+    <section class="section bg-peach-tint">
+      <div class="reveal">
+        <h2 class="script-heading">Two Hearts, One Journey</h2>
+        <!-- <p class="grandparents-tag">G/S/o Parsadi Lal &amp; Ramdai</p> -->
 
-                <!-- Groom Card -->
-                <div class="portrait-card">
-                    <div class="portrait-frame">
-                        <!-- Replace 'groom.jpeg' with Dikshit's solo photo -->
-                        <img src="groom.jpeg"
-                            onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'"
-                            alt="Dikshit">
-                    </div>
-                    <div class="solo-name">Dikshit</div>
-                    <div class="solo-parents">S/o Mrs. Kusum &amp; Mr. Kashi Ram </div>
-                </div>
+        <!-- Groom Card -->
+        <div class="portrait-card">
+          <div class="portrait-frame">
+            <!-- Replace 'groom.jpeg' with Dikshit's solo photo -->
+            <img src="groom.jpeg"
+              onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80'"
+              alt="Dikshit">
+          </div>
+          <div class="solo-name">Dikshit</div>
+          <div class="solo-parents">S/o Mrs. Kusum Devi &amp; Mr. Kashi Ram Dhiman</div>
+        </div>
 
-                <div class="ampersand-divider">&amp;</div>
+        <div class="ampersand-divider">&amp;</div>
 
-                <!-- Bride Card -->
-                <div class="portrait-card">
-                    <div class="portrait-frame">
-                        <!-- Replace 'bride.jpeg' with Aditi's solo photo -->
-                        <img src="bride.jpeg"
-                            onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80'"
-                            alt="Aditi">
-                    </div>
-                    <div class="solo-name">Aditi</div>
-                    <div class="solo-parents">D/o Mrs. Sudha &amp; Mr. Sanjay </div>
-                </div>
-            </div>
-        </section>
+        <!-- Bride Card -->
+        <div class="portrait-card">
+          <div class="portrait-frame">
+            <!-- Replace 'bride.jpeg' with Aditi's solo photo -->
+            <img src="bride.jpeg"
+              onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80'"
+              alt="Aditi">
+          </div>
+          <div class="solo-name">Aditi</div>
+          <div class="solo-parents">D/o Mrs. Sudha Rani &amp; Mr. Sanjay Kumar</div>
+        </div>
+      </div>
+    </section>
 
-        <!-- =========================================
+    <!-- =========================================
              SLIDE 5: THE CELEBRATIONS TIMELINE
              ========================================= -->
-        <section class="section bg-warm">
-            <div class="reveal">
-                <h2 class="script-heading">The Celebrations</h2>
-                <p class="sub-caption">Join us in our moments of joy</p>
+    <section class="section bg-warm">
+      <div class="reveal">
+        <h2 class="script-heading">The Celebrations</h2>
+        <p class="sub-caption">Join us in our moments of joy</p>
 
-                <div class="timeline-container">
-                    <!-- Event 1: Wedding -->
-                    <div class="timeline-item">
-                        <div class="timeline-heart">♥</div>
-                        <div class="event-header-row">
-                            <span class="event-title">Wedding</span>
-                            <span class="event-time">09:00 PM</span>
-                        </div>
-                        <div class="event-date-row">
-                            <span>2nd December, 2026</span>
-                            <span>WEDNESDAY</span>
-                        </div>
-                        <div class="event-venue">
-                            Hotel Blue Sapphire, Ramnagar, Roorkee
-                        </div>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Blue+Sapphire+Ramnagar+Roorkee"
-                            target="_blank" class="direction-btn">
-                            Get Directions
-                        </a>
-                    </div>
-
-                    <!-- Event 2: Reception -->
-                    <div class="timeline-item" style="margin-bottom: 10px;">
-                        <div class="timeline-heart">♥</div>
-                        <div class="event-header-row">
-                            <span class="event-title">Reception</span>
-                            <span class="event-time">08:30 PM</span>
-                        </div>
-                        <div class="event-date-row">
-                            <span>3rd December, 2026</span>
-                            <span>THURSDAY</span>
-                        </div>
-                        <div class="event-venue">
-                            Swayamvar Palace, Opp Buddhi Mata, Kankhal, Haridwar
-                        </div>
-                        <a href="https://www.google.com/maps/search/?api=1&query=Swayamvar+Palace+Kankhal+Haridwar"
-                            target="_blank" class="direction-btn">
-                            Get Directions
-                        </a>
-                    </div>
-                </div>
+        <div class="timeline-container">
+          <!-- Event 1: Wedding -->
+          <div class="timeline-item">
+            <div class="timeline-heart">♥</div>
+            <div class="event-header-row">
+              <span class="event-title">Wedding</span>
+              <span class="event-time">09:00 PM</span>
             </div>
-        </section>
+            <div class="event-date-row">
+              <span>2nd December, 2026</span>
+              <span>WEDNESDAY</span>
+            </div>
+            <div class="event-venue">
+              Hotel Blue Sapphire, Ramnagar, Roorkee
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Hotel+Blue+Sapphire+Ramnagar+Roorkee"
+              target="_blank" class="direction-btn">
+              Get Directions
+            </a>
+          </div>
 
-        <!-- =========================================
+          <!-- Event 2: Reception -->
+          <div class="timeline-item" style="margin-bottom: 10px;">
+            <div class="timeline-heart">♥</div>
+            <div class="event-header-row">
+              <span class="event-title">Reception</span>
+              <span class="event-time">08:30 PM</span>
+            </div>
+            <div class="event-date-row">
+              <span>3rd December, 2026</span>
+              <span>THURSDAY</span>
+            </div>
+            <div class="event-venue">
+              Swayamvar Palace, Opp Buddhi Mata, Kankhal, Haridwar
+            </div>
+            <a href="https://www.google.com/maps/search/?api=1&query=Swayamvar+Palace+Kankhal+Haridwar" target="_blank"
+              class="direction-btn">
+              Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
              SLIDE 6: A LEGACY OF LOVE (PHOTO GALLERY)
              ========================================= -->
-        <section class="section bg-peach-tint">
-            <div class="reveal">
-                <h2 class="script-heading">A Legacy of Love</h2>
-                <p class="sub-caption">With the Blessings of Our Families</p>
+    <section class="section bg-peach-tint">
+      <div class="reveal">
+        <h2 class="script-heading">A Legacy of Love</h2>
+        <p class="sub-caption">With the Blessings of Our Families</p>
 
-                <div class="gallery-slider" id="gallery-slider">
-                    <div class="gallery-slide">
-                        <img src="gallery1.jpeg"
-                            onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80'"
-                            alt="Couple Moment 1">
-                    </div>
-                    <div class="gallery-slide">
-                        <img src="gallery2.jpeg"
-                            onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80'"
-                            alt="Couple Moment 2">
-                    </div>
-                    <div class="gallery-slide">
-                        <img src="gallery3.jpeg"
-                            onerror="this.src='https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=700&q=80'"
-                            alt="Couple Moment 3">
-                    </div>
-                    <div class="gallery-slide">
-                        <img src="gallery4.jpeg"
-                            onerror="this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=700&q=80'"
-                            alt="Couple Moment 4">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="gallery-slider" id="gallery-slider">
+          <div class="gallery-slide">
+            <img src="gallery1.jpeg"
+              onerror="this.src='https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80'"
+              alt="Couple Moment 1">
+          </div>
+          <div class="gallery-slide">
+            <img src="gallery2.jpeg"
+              onerror="this.src='https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80'"
+              alt="Couple Moment 2">
+          </div>
+          <div class="gallery-slide">
+            <img src="gallery3.jpeg"
+              onerror="this.src='https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=700&q=80'"
+              alt="Couple Moment 3">
+          </div>
+          <div class="gallery-slide">
+            <img src="gallery4.jpeg"
+              onerror="this.src='https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=700&q=80'"
+              alt="Couple Moment 4">
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- =========================================
+    <!-- =========================================
              SLIDE 7: WILL YOU JOIN US? (RSVP)
              ========================================= -->
-        <section class="section bg-warm">
+    <!-- <section class="section bg-warm">
             <div class="reveal">
                 <h2 class="script-heading">Will you join us?</h2>
                 <p class="sub-caption">We look forward to celebrating with you</p>
@@ -1242,278 +1229,268 @@
                     <button type="submit" class="submit-rsvp-btn">Send RSVP</button>
                 </form>
             </div>
-        </section>
+        </section> -->
 
-        <!-- =========================================
-             SLIDE 8: REGARDS & FAMILY CONTACTS
+    <!-- =========================================
+             SLIDE 8: A WARM INVITATION TO CELEBRATE
              ========================================= -->
-        <footer class="footer-envelope-section">
-            <div class="reveal">
-                <div class="regards-card">
-                    <div class="regards-title">Regards</div>
-                    <div class="regards-sub">Family</div>
+    <footer class="invitation-footer">
+      <div class="reveal">
+        <p class="closing-note">Please join us to celebrate our wedding<br>and make beautiful memories together.</p>
+      </div>
+    </footer>
 
-                    <div class="contact-row">
-                        <span class="contact-name">Kashi Ram</span>
-                        <a href="tel:+919411756702" class="contact-phone">+91-9411756702</a>
-                    </div>
+  </div>
 
-                    <div class="contact-row">
-                        <span class="contact-name">Sachin Dhiman</span>
-                        <a href="tel:+919557022499" class="contact-phone">+91-9557022499</a>
-                    </div>
-                </div>
+  <script>
+    /* =========================================
+       1. ENVELOPE OPENING & CONTINUOUS LOOP AUDIO
+       ========================================= */
+    const audio = document.getElementById('wedding-audio');
+    const musicBtn = document.getElementById('music-control');
+    let isPlaying = false;
 
-                <div class="footer-seal">D &amp; A</div>
+    audio.addEventListener('ended', function () {
+      this.currentTime = 0;
+      this.play();
+    }, false);
 
-                <p class="closing-note">We eagerly await your presence to bless Dikshit &amp; Aditi</p>
-            </div>
-        </footer>
+    function openEnvelope() {
+      const overlay = document.getElementById('envelope-overlay');
+      const hero = document.getElementById('hero-sec');
 
-    </div>
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      overlay.classList.add('open');
+      hero.classList.add('active');
+      musicBtn.style.display = 'flex';
 
-    <script>
-        /* =========================================
-           1. ENVELOPE OPENING & CONTINUOUS LOOP AUDIO
-           ========================================= */
-        const audio = document.getElementById('wedding-audio');
-        const musicBtn = document.getElementById('music-control');
-        let isPlaying = false;
+      audio.play().then(() => {
+        isPlaying = true;
+        musicBtn.textContent = '🔊';
+      }).catch(() => {
+        isPlaying = false;
+        musicBtn.textContent = '🔇';
+      });
 
-        audio.addEventListener('ended', function () {
-            this.currentTime = 0;
-            this.play();
-        }, false);
+      setTimeout(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        overlay.classList.add('hidden');
+      }, 1350);
+    }
 
-        function openEnvelope() {
-            const overlay = document.getElementById('envelope-overlay');
-            const hero = document.getElementById('hero-sec');
+    function toggleAudio() {
+      if (isPlaying) {
+        audio.pause();
+        musicBtn.textContent = '🔇';
+      } else {
+        audio.play();
+        musicBtn.textContent = '🔊';
+      }
+      isPlaying = !isPlaying;
+    }
 
-            overlay.classList.add('open');
-            hero.classList.add('active');
-            musicBtn.style.display = 'flex';
+    /* =========================================
+       2. SCRATCH CARD + FULL-SCREEN CELEBRATION BLAST
+       ========================================= */
+    const canvas = document.getElementById('scratch-canvas');
+    const ctx = canvas.getContext('2d');
+    const scratchInstruction = document.getElementById('scratch-instruction');
+    let isDrawing = false;
+    let hasCelebrated = false;
 
-            audio.play().then(() => {
-                isPlaying = true;
-                musicBtn.textContent = '🔊';
-            }).catch(() => {
-                isPlaying = false;
-                musicBtn.textContent = '🔇';
-            });
+    function initScratchCard() {
+      const theme = getComputedStyle(document.documentElement);
+      const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+      grad.addColorStop(0, theme.getPropertyValue('--peach-deep').trim());
+      grad.addColorStop(0.5, theme.getPropertyValue('--peach-dark').trim());
+      grad.addColorStop(1, theme.getPropertyValue('--peach-deep').trim());
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            setTimeout(() => {
-                overlay.classList.add('hidden');
-            }, 1350);
+      // Subtle shimmer border
+      ctx.strokeStyle = '#FFFDF9';
+      ctx.lineWidth = 3;
+      ctx.strokeRect(8, 8, canvas.width - 16, canvas.height - 16);
+
+      // Text prompt
+      ctx.fillStyle = '#FFFDF9';
+      ctx.font = '600 16px Montserrat, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('✦ Scratch to Reveal ✦', canvas.width / 2, canvas.height / 2);
+    }
+
+    initScratchCard();
+
+    function triggerCelebrationBlast() {
+      if (hasCelebrated) return;
+      hasCelebrated = true;
+      scratchInstruction.hidden = true;
+
+      // Smoothly fade out remaining scratch layer so date is crystal clear
+      canvas.style.opacity = '0';
+      setTimeout(() => {
+        canvas.style.display = 'none';
+      }, 600);
+
+      // Match the celebration to the invitation palette.
+      if (typeof confetti === 'function') {
+        const theme = getComputedStyle(document.documentElement);
+        const colors = ['--peach-pink', '--peach-soft', '--gold-accent', '--bg-warm-white', '--peach-deep']
+          .map(name => theme.getPropertyValue(name).trim());
+        confetti({
+          particleCount: 65,
+          spread: 75,
+          origin: { y: 0.55 },
+          colors: colors
+        });
+        setTimeout(() => {
+          confetti({
+            particleCount: 40,
+            angle: 60,
+            spread: 60,
+            origin: { x: 0, y: 0.6 },
+            colors: colors
+          });
+          confetti({
+            particleCount: 40,
+            angle: 120,
+            spread: 60,
+            origin: { x: 1, y: 0.6 },
+            colors: colors
+          });
+        }, 220);
+      }
+    }
+
+    function checkScratchPercentage() {
+      if (hasCelebrated) return;
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const pixels = imageData.data;
+      let transparentPixels = 0;
+      const totalPixels = pixels.length / 4;
+
+      for (let i = 3; i < pixels.length; i += 16) {
+        if (pixels[i] === 0) transparentPixels++;
+      }
+
+      const scratchedRatio = transparentPixels / (totalPixels / 4);
+      if (scratchedRatio > 0.35) {
+        triggerCelebrationBlast();
+      }
+    }
+
+    function getPos(e) {
+      const rect = canvas.getBoundingClientRect();
+      const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+      const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+      return {
+        x: (clientX - rect.left) * (canvas.width / rect.width),
+        y: (clientY - rect.top) * (canvas.height / rect.height)
+      };
+    }
+
+    function scratch(e) {
+      if (!isDrawing) return;
+      e.preventDefault();
+      const pos = getPos(e);
+      ctx.globalCompositeOperation = 'destination-out';
+      ctx.beginPath();
+      ctx.arc(pos.x, pos.y, 24, 0, Math.PI * 2);
+      ctx.fill();
+      checkScratchPercentage();
+    }
+
+    canvas.addEventListener('mousedown', (e) => { isDrawing = true; scratch(e); });
+    canvas.addEventListener('mousemove', scratch);
+    window.addEventListener('mouseup', () => { isDrawing = false; });
+
+    canvas.addEventListener('touchstart', (e) => { isDrawing = true; scratch(e); }, { passive: false });
+    canvas.addEventListener('touchmove', scratch, { passive: false });
+    window.addEventListener('touchend', () => { isDrawing = false; });
+
+    /* =========================================
+       3. LIVE COUNTDOWN TIMER (DEC 02, 2026 9:00 PM)
+       ========================================= */
+    const targetDate = new Date("December 02, 2026 21:00:00").getTime();
+
+    setInterval(() => {
+      const now = new Date().getTime();
+      const diff = targetDate - now;
+
+      const d = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
+      const h = Math.max(0, Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
+      const m = Math.max(0, Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)));
+      const s = Math.max(0, Math.floor((diff % (1000 * 60)) / 1000));
+
+      document.getElementById('cd-days').textContent = String(d).padStart(2, '0');
+      document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
+      document.getElementById('cd-mins').textContent = String(m).padStart(2, '0');
+      document.getElementById('cd-secs').textContent = String(s).padStart(2, '0');
+    }, 1000);
+
+    /* =========================================
+       4. SCROLL REVEAL & AUTO GALLERY SLIDE
+       ========================================= */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
         }
+      });
+    }, { threshold: 0.15 });
 
-        function toggleAudio() {
-            if (isPlaying) {
-                audio.pause();
-                musicBtn.textContent = '🔇';
-            } else {
-                audio.play();
-                musicBtn.textContent = '🔊';
-            }
-            isPlaying = !isPlaying;
-        }
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-        /* =========================================
-           2. SCRATCH CARD + FULL-SCREEN CELEBRATION BLAST
-           ========================================= */
-        const canvas = document.getElementById('scratch-canvas');
-        const ctx = canvas.getContext('2d');
-        let isDrawing = false;
-        let hasCelebrated = false;
+    const slider = document.getElementById('gallery-slider');
+    let slideIdx = 0;
+    setInterval(() => {
+      if (!slider) return;
+      slideIdx = (slideIdx + 1) % 4;
+      const slideWidth = slider.clientWidth * 0.84;
+      slider.scrollTo({ left: slideIdx * slideWidth, behavior: 'smooth' });
+    }, 3500);
 
-        function initScratchCard() {
-            const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-            grad.addColorStop(0, '#E8998D');
-            grad.addColorStop(0.5, '#F2B8AE');
-            grad.addColorStop(1, '#D67B6F');
-            ctx.fillStyle = grad;
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
+    /* =========================================
+       5. INTERACTIVE RSVP TO WHATSAPP
+       ========================================= */
+    // let attendanceStatus = 'Joyfully Accept';
+    // let guestCount = 1;
 
-            // Subtle shimmer border
-            ctx.strokeStyle = '#FFFDF9';
-            ctx.lineWidth = 3;
-            ctx.strokeRect(8, 8, canvas.width - 16, canvas.height - 16);
+    // function setAttendance(status, btn) {
+    //   attendanceStatus = status;
+    //   btn.parentElement.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('active'));
+    //   btn.classList.add('active');
+    // }
 
-            // Text prompt
-            ctx.fillStyle = '#FFFDF9';
-            ctx.font = '600 16px Montserrat, sans-serif';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillText('✦ Scratch to Reveal ✦', canvas.width / 2, canvas.height / 2);
-        }
+    // function updateGuests(delta) {
+    //   guestCount = Math.max(1, Math.min(15, guestCount + delta));
+    //   document.getElementById('guest-label').textContent = guestCount + (guestCount === 1 ? ' Guest' : ' Guests');
+    // }
 
-        initScratchCard();
+    // function toggleEvent(btn) {
+    //   btn.classList.toggle('active');
+    // }
 
-        function triggerCelebrationBlast() {
-            if (hasCelebrated) return;
-            hasCelebrated = true;
+    // function sendWhatsAppRSVP(e) {
+    //   e.preventDefault();
+    //   const name = document.getElementById('rsvp-name').value.trim();
+    //   const note = document.getElementById('rsvp-note').value.trim();
+    //   const selectedEvents = [];
+    //   e.target.querySelectorAll('.form-group:nth-child(4) .choice-btn.active').forEach(b => {
+    //     selectedEvents.push(b.textContent);
+    //   });
 
-            // Smoothly fade out remaining scratch layer so date is crystal clear
-            canvas.style.opacity = '0';
-            setTimeout(() => {
-                canvas.style.display = 'none';
-            }, 600);
+    //   const msg = `Wedding RSVP for Dikshit & Aditi:%0A` +
+    //     `• Name: ${encodeURIComponent(name)}%0A` +
+    //     `• Response: ${encodeURIComponent(attendanceStatus)}%0A` +
+    //     `• Guests: ${guestCount}%0A` +
+    //     `• Events: ${encodeURIComponent(selectedEvents.join(', ') || 'None')}%0A` +
+    //     `• Blessing: ${encodeURIComponent(note || 'Best Wishes!')}`;
 
-            // Elegant full-screen confetti blast in peach pink, gold & warm white
-            if (typeof confetti === 'function') {
-                const colors = ['#E8998D', '#F4C2B8', '#C59B48', '#FFFDF9', '#C86D61'];
-                confetti({
-                    particleCount: 65,
-                    spread: 75,
-                    origin: { y: 0.55 },
-                    colors: colors
-                });
-                setTimeout(() => {
-                    confetti({
-                        particleCount: 40,
-                        angle: 60,
-                        spread: 60,
-                        origin: { x: 0, y: 0.6 },
-                        colors: colors
-                    });
-                    confetti({
-                        particleCount: 40,
-                        angle: 120,
-                        spread: 60,
-                        origin: { x: 1, y: 0.6 },
-                        colors: colors
-                    });
-                }, 220);
-            }
-        }
-
-        function checkScratchPercentage() {
-            if (hasCelebrated) return;
-            const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-            const pixels = imageData.data;
-            let transparentPixels = 0;
-            const totalPixels = pixels.length / 4;
-
-            for (let i = 3; i < pixels.length; i += 16) {
-                if (pixels[i] === 0) transparentPixels++;
-            }
-
-            const scratchedRatio = transparentPixels / (totalPixels / 4);
-            if (scratchedRatio > 0.35) {
-                triggerCelebrationBlast();
-            }
-        }
-
-        function getPos(e) {
-            const rect = canvas.getBoundingClientRect();
-            const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-            const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-            return {
-                x: (clientX - rect.left) * (canvas.width / rect.width),
-                y: (clientY - rect.top) * (canvas.height / rect.height)
-            };
-        }
-
-        function scratch(e) {
-            if (!isDrawing) return;
-            e.preventDefault();
-            const pos = getPos(e);
-            ctx.globalCompositeOperation = 'destination-out';
-            ctx.beginPath();
-            ctx.arc(pos.x, pos.y, 24, 0, Math.PI * 2);
-            ctx.fill();
-            checkScratchPercentage();
-        }
-
-        canvas.addEventListener('mousedown', (e) => { isDrawing = true; scratch(e); });
-        canvas.addEventListener('mousemove', scratch);
-        window.addEventListener('mouseup', () => { isDrawing = false; });
-
-        canvas.addEventListener('touchstart', (e) => { isDrawing = true; scratch(e); }, { passive: false });
-        canvas.addEventListener('touchmove', scratch, { passive: false });
-        window.addEventListener('touchend', () => { isDrawing = false; });
-
-        /* =========================================
-           3. LIVE COUNTDOWN TIMER (DEC 02, 2026 9:00 PM)
-           ========================================= */
-        const targetDate = new Date("December 02, 2026 21:00:00").getTime();
-
-        setInterval(() => {
-            const now = new Date().getTime();
-            const diff = targetDate - now;
-
-            const d = Math.max(0, Math.floor(diff / (1000 * 60 * 60 * 24)));
-            const h = Math.max(0, Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-            const m = Math.max(0, Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)));
-            const s = Math.max(0, Math.floor((diff % (1000 * 60)) / 1000));
-
-            document.getElementById('cd-days').textContent = String(d).padStart(2, '0');
-            document.getElementById('cd-hours').textContent = String(h).padStart(2, '0');
-            document.getElementById('cd-mins').textContent = String(m).padStart(2, '0');
-            document.getElementById('cd-secs').textContent = String(s).padStart(2, '0');
-        }, 1000);
-
-        /* =========================================
-           4. SCROLL REVEAL & AUTO GALLERY SLIDE
-           ========================================= */
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.15 });
-
-        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-        const slider = document.getElementById('gallery-slider');
-        let slideIdx = 0;
-        setInterval(() => {
-            if (!slider) return;
-            slideIdx = (slideIdx + 1) % 4;
-            const slideWidth = slider.clientWidth * 0.84;
-            slider.scrollTo({ left: slideIdx * slideWidth, behavior: 'smooth' });
-        }, 3500);
-
-        /* =========================================
-           5. INTERACTIVE RSVP TO WHATSAPP
-           ========================================= */
-        let attendanceStatus = 'Joyfully Accept';
-        let guestCount = 1;
-
-        function setAttendance(status, btn) {
-            attendanceStatus = status;
-            btn.parentElement.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-        }
-
-        function updateGuests(delta) {
-            guestCount = Math.max(1, Math.min(15, guestCount + delta));
-            document.getElementById('guest-label').textContent = guestCount + (guestCount === 1 ? ' Guest' : ' Guests');
-        }
-
-        function toggleEvent(btn) {
-            btn.classList.toggle('active');
-        }
-
-        function sendWhatsAppRSVP(e) {
-            e.preventDefault();
-            const name = document.getElementById('rsvp-name').value.trim();
-            const note = document.getElementById('rsvp-note').value.trim();
-            const selectedEvents = [];
-            e.target.querySelectorAll('.form-group:nth-child(4) .choice-btn.active').forEach(b => {
-                selectedEvents.push(b.textContent);
-            });
-
-            const msg = `Wedding RSVP for Dikshit & Aditi:%0A` +
-                `• Name: ${encodeURIComponent(name)}%0A` +
-                `• Response: ${encodeURIComponent(attendanceStatus)}%0A` +
-                `• Guests: ${guestCount}%0A` +
-                `• Events: ${encodeURIComponent(selectedEvents.join(', ') || 'None')}%0A` +
-                `• Blessing: ${encodeURIComponent(note || 'Best Wishes!')}`;
-
-            window.open(`https://wa.me/919411756702?text=${msg}`, '_blank');
-        }
-    </script>
+    //   window.open(`https://wa.me/919411756702?text=${msg}`, '_blank');
+    // }
+  </script>
 </body>
 
 </html>

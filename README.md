@@ -3,7 +3,7 @@
 A romantic wedding invitation website for the celebration of Dikshit and Aditi.
 
 ## Overview
-This project is a static, mobile-friendly wedding invitation page built with HTML, CSS, and JavaScript. It includes a warm floral theme, animated opening envelope, event details, gallery, and background music for a polished digital invite experience.
+This project is a static, mobile-friendly wedding invitation page built with HTML, CSS, and JavaScript. It includes a blush-pink theme with plum typography, animated opening envelope, event details, gallery, and background music for a polished digital invite experience.
 
 ## Files in this folder
 - `index.html` — Main wedding invitation page with all layout, styling, and interactivity.
@@ -15,12 +15,16 @@ This project is a static, mobile-friendly wedding invitation page built with HTM
 
 ## Features
 - Elegant wedding invitation design
-- Animated envelope reveal on load
+- Animated envelope reveal that returns to the top of the invitation whenever opened
+- Traditional inline Ganesha illustration and complete Sanskrit mantra on the opening screen only, with a fade-to-glow animation (respects reduced-motion preferences)
+- Tangerine calligraphy for the couple's names and section headings, with a subtle matching outline for bolder headings
+- Scratch-to-reveal date with instructions hidden automatically after the reveal
 - Event details and schedule section
 - Photo gallery
 - Music toggle control
 - Responsive layout for mobile devices
 - Confetti celebration effect
+- Compact, box-free closing message inviting guests to celebrate, without names or contact details
 
 ## How to view the project
 Open `index.html` directly in a browser, or run a small local web server from this folder:
